@@ -43,6 +43,6 @@ Command example to symbolically link a script for normal users:
 ```sh
  ln -s /opt/scripts/example.sh /usr/bin/
  ```
- :zap: Since symbolic links are going to folders already in $PATH it is unnecessary to add /opt/scripts to $PATH.  
+ :zap: Since symbolic links are going to folders already in $PATH therefore unnecessary to add /opt/scripts to $PATH.  
    
 
