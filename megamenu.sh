@@ -4,7 +4,7 @@
 
 saveIFS="$IFS"
 IFS=$'\n'
-read -d '' -a menuarray < menu
+read -d '' -a menuarray < ./menu
 IFS="$saveIFS"
 
 for (( i=0; i<${#menuarray[@]}; i++ ))
