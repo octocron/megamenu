@@ -41,7 +41,7 @@ here is wether to require root password or not.
 + Execute for root; make symbolic link to /usr/local/sbin :lock:
 Command example to symbolically link a script for normal users:
 ```sh
- ln -s /opt/scripts/example.sh /usr/bin/
+ sudo ln -s /opt/scripts/example.sh /usr/local/bin/
  ```
  :zap: Since symbolic links are going to folders already in $PATH therefore unnecessary to add /opt/scripts to $PATH.  
    
