@@ -4,7 +4,7 @@
 Script for terminal to bring up menu options for system and network information and some other useless things  	(￣▽￣)ノ
 
 ## Setting It Up
-Place into path environment of terminal app.  There are several places you can choose to put them.
+Place into path environment of terminal app so that it will be permanently accessible.  There are several places the scripts can be placed (just megamenu.sh and menu)  These two must be together in the same folder.
 However, do not place scripts directly into /bin /sbin/ /usr/bin or /usr/sbin.  Sure, they will function there,
 but they may overwrite an existing function when placed or during an update.  It is best to 
 avoid $PATH conflicts.  Here are some safe options, including Recommended!
@@ -19,7 +19,7 @@ If it is not in the $PATH, simply run this to add it.
 ```sh
 PATH=$PATH:/usr/local/bin
 ```
-> 2. Create a folder in home called bin.  These scripts will be available to that home user unless adpated with sybolic links like in next example.
+> 2. Create a folder in home called bin.  These scripts will be available only to that single home user unless adpated with sybolic links like in next example.  (symlinking to the local folders makes scripts system-wide)
 ```sh
 ~/bin
 ```
