@@ -1,9 +1,9 @@
 # <img src="https://img.shields.io/github/license/mashape/apistatus.svg"> | megamenu
 
 ## Description
-Script for terminal to bring up menu options for system and network information.
+Script for terminal to bring up menu options for system and network information and some other useless things  	(￣▽￣)ノ
 
-## Use
+## Setting It Up
 Place into path environment of terminal app.  There are several places you can choose to put them.
 However, do not place scripts directly into /bin /sbin/ /usr/bin or /usr/sbin.  Sure, they will function there,
 but they may overwrite an existing function when placed or during an update.  It is best to 
@@ -45,4 +45,13 @@ Command example to symbolically link a script for normal users:
  ```
  :zap: Since symbolic links are going to folders already in $PATH therefore unnecessary to add /opt/scripts to $PATH.  
    
+## Use
+Once the above is completed.  Close the terminal completely and start it back up again.  This will update the environment to include the script.
+> Now, for using the newly added script simply type the following:
+```sh
+megamenu.sh
+```
 
+Though the name has a large connotation, it needs to stay small so the menu does not fill the screen.  If you think of anything to add please leave a suggestion at megacron@d3c3p7.com
+
+~Thanks and Is it fear or courage that compels you, fleshling?

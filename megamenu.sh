@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# megamenu: a menu of system information and various terminal abilities.
+# megamenu: a menu of system information and various terminal baffoonery.
 
 saveIFS="$IFS"
 IFS=$'\n'
