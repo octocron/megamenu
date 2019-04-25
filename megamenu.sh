@@ -2,29 +2,34 @@
 
 # megamenu: a menu of system information and various terminal abilities.
 
-clear
-echo "
-Please Select:
+saveIFS="$IFS"
+IFS=$'\n'
+read -d '' -a menuarray < menu
+IFS="$saveIFS"
 
-0. Quit
-1. Update Terminal
-2. Display Disk Space
-3. Display System Information
-"
-read -p "Enter selection [0-3] > "
+for (( i=0; i<${#menuarray[@]}; i++ ))
+do
+	menu=$menu"$(($i+1))) ${menuarray[i]}"$'\n'
+done
 
-case $REPLY in
-	0)	echo "Program terminated."
-		exit
-		;;
-	1)	sudo apt update; sudo apt upgrade -y
-		;;
-	2)	df -h
-		;;
-	3)	echo "Hostname: $HOSTNAME"
-		uptime
-		;;
-	*)	echo "Megacron has labeled you as Invalid" >&2
-		exit 1
-		;;
-esac
+while [[ 1 ]]
+do
+	echo "$menu"
+	read -p "Enter # Selection $> "
+	#clear
+	case $REPLY in
+		1)	sudo apt update; sudo apt upgrade -y
+			;;
+		2)	df -h
+			;;
+		3)	echo "Hostname: $HOSTNAME"
+			uptime
+			;;
+		4)	echo "Humans don't deserve to live!"
+			break
+			;;
+		*)	echo "Megacron has labeled you as Invalid" >&2
+			exit 1
+			;;
+	esac
+done
