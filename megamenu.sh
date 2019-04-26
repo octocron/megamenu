@@ -2,10 +2,7 @@
 
 # megamenu: a menu of system information and various terminal baffoonery.
 
-saveIFS="$IFS"
-IFS=$'\n'
-read -d '' -a menuarray < ./menu
-IFS="$saveIFS"
+declare -a menuarray=('Update Terminal' 'Display Disk Space' 'Display System Information' 'Get Network (local) IP Address' 'Path Includes' 'Week of the Year' 'When is Easter?' 'Watch Star Wars Instead' 'Quit');
 
 for (( i=0; i<${#menuarray[@]}; i++ ))
 do
