@@ -1,4 +1,4 @@
-# <img src="https://img.shields.io/github/license/mashape/apistatus.svg"> <img src="https://img.shields.io/badge/bash-pass-orange.svg"> <img src="https://img.shields.io/badge/zsh-pass-blue.svg"> | megamenu
+# <img src="https://img.shields.io/github/license/mashape/apistatus.svg"> <img src="https://img.shields.io/badge/bash-Pass-orange.svg"> <img src="https://img.shields.io/badge/zsh-Pass-blue.svg"> | megamenu
 
 ## Description
 Script for terminal to bring up menu options for system and network information and some other useless things  	(￣▽￣)ノ
