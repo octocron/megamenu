@@ -18,6 +18,8 @@ do
 	read -p "Enter Selection, $USER [1-9] > "
 	clear
 	case $REPLY in
+		0)	xdg-open https://www.d3c3p7.com 2>/dev/null || open https://www.d3c3p7.com
+			;;
 		1)	sudo apt update; sudo apt upgrade -y
 			;;
 		2)	df -h
