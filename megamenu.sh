@@ -25,21 +25,26 @@ do
 		3)	echo "Hostname: $HOSTNAME"
 			uptime
 			;;
-		4)	echo "Your IP is:"
+		4)	echo "I know where you are:"
 			dig +short myip.opendns.com @resolver1.opendns.com
 			;;
-		5)	echo "These are included in your \$PATH:"
+		5)	echo "Weak human, this is your \$PATH:"
 			echo -e ${PATH//:/\\n}
 			;;	
 		6)	echo "The week is... "
 			date +%V
 			;;
-		7)	echo "The next Easter will be "
+		7)	echo "This year's Easter is on "
 			ncal -e
 			;;
 		8)	nc towel.blinkenlights.nl 23
 			;;	
-		9)	echo "Humans don't deserve to live!"
+		9)	arr[0]="Humans don't deserve to live!"
+			arr[1]="You fail me yet again, Starscream. GET THEM!"
+			arr[2]="Is it fear or courage that compels you, fleshling?"
+			arr[3]="Give me the Allspark, and you may live to be my pet."
+			rand=$(( RANDOM % 4 ))
+			echo "${arr[$rand]}"
 			break
 			;;
 		*)	echo "Megacron has labeled $USER as Invalid" >&2
