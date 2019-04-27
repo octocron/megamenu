@@ -1,5 +1,7 @@
 # <img src="https://img.shields.io/badge/license-MIT-green.svg"> <img src="https://img.shields.io/badge/bash-Pass-orange.svg"> <img src="https://img.shields.io/badge/zsh-Pass-blue.svg"> | megamenu
 
+![Screenshot](img/megamenu.png)
+
 ## Description
 Script for terminal to bring up menu options for system and network information and some other useless things  	(￣▽￣)ノ
 
