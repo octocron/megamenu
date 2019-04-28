@@ -54,6 +54,8 @@ megamenu.sh
 
 Though the name has a large connotation, it was kept small so the menu does not fill the entire screen!  If you think of anything to add please leave a suggestion at megacron@d3c3p7.com
 
-Feel free to fork ;)
+You may edit the file to include your own customizations.  This script is elementary and understandable.  If you do edit the file, make sure you edit it from `/opt/scripts` and not from the symlink location `/usr/local/bin`
+
+If you make something cool, please give me feedback :)
 
 ~Thanks, Megacron.
