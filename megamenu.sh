@@ -11,7 +11,7 @@ done
 
 while [[ 1 ]]
 do
-	echo "$menu"
+	echo "$(tput setaf 4)$menu" # 0 black, 1 red, 2 green, 3 yellow, 4 blue, 5 magenta, 6 cyan, 7 white
 	read -p "Enter Selection, $USER [1-9] > "
 	clear
 	case $REPLY in
