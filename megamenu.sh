@@ -58,7 +58,7 @@ do
 			echo ""
 			break
 			;;
-		*)	echo "Megacron has labeled $USER as Invalid" >&2
+    *)	echo "$(tput setaf 1)Megacron has labeled $USER as Invalid" >&2
 			echo ""
 			exit 1
 			;;
