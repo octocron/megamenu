@@ -58,6 +58,8 @@ do
 			echo ""
 			break
 			;;
+		t)	for (( i = 0; i < 17; i++)); do echo "$(tput setaf $i)This is $i $(tput sgr0)";done
+			;;
     *)	echo "$(tput setaf 1)Megacron has labeled $USER as Invalid" >&2
 			echo ""
 			exit 1
