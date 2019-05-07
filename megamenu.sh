@@ -2,7 +2,7 @@
 
 # megamenu: a menu of system information and various terminal baffoonery.
 
-declare -a menuarray=('Update Terminal' 'Display Disk Space' 'Display System Information' 'Get Network (local) IP Address' 'Path Includes' 'Week of the Year' 'When is Easter?' 'Watch Star Wars Instead' 'Quit');
+declare -a menuarray=('APT Update' 'Display Disk Space' 'Display System Information' 'Get Network (local) IP Address' 'Path Includes' 'Week of the Year' 'When is Easter?' 'Watch Star Wars Instead' 'Quit');
 
 for (( i=0; i<${#menuarray[@]}; i++ ))
 do
@@ -11,7 +11,7 @@ done
 
 while [[ 1 ]]
 do
-	echo "$menu"
+	echo "$(tput setaf 4)$menu" # 0 black, 1 red, 2 green, 3 yellow, 4 blue, 5 magenta, 6 cyan, 7 white
 	read -p "Enter Selection, $USER [1-9] > "
 	clear
 	case $REPLY in
