@@ -51,6 +51,10 @@ Once  one of the above is completed.  Close the terminal completely and start it
 ```sh
 megamenu.sh
 ```
+If there are any permission issues.  It may actually be because the file is not executable. Try running this:
+```sh
+chmod 755 /opt/scripts/megamenu.sh
+```
 
 Though the name has a large connotation, it was kept small so the menu does not fill the entire screen!  If you think of anything to add please leave a suggestion at megacron@d3c3p7.com
 
